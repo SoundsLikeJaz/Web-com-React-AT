@@ -41,6 +41,11 @@ export default function Ex3_4() {
                             matchPattern: (v) => /^[0-9]+$/g.test(v) || "O campo telefone deve conter apenas números!",
                         }
                     })} />
+                    {errors.tel?.message && (
+                        <div>
+                            <span style={{ color: "red" }}>{errors.tel.message}</span>
+                        </div>
+                    )}
                     <br /> <br />
                     <button type="submit">Enviar</button>
                 </form>
