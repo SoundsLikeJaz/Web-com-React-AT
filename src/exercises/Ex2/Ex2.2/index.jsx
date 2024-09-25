@@ -7,7 +7,7 @@ export default function Ex2_2({ pais = "" }) {
 
     useEffect(() => {
         obterPaises().then((paises) => {
-            setPaises(paises);
+            setPaises(paises.sort((a, b) => a.nome.localeCompare(b.nome)));
         });
     }, []);
 

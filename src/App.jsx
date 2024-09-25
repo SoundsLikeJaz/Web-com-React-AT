@@ -6,6 +6,7 @@ import Home from "./Home";
 import { Ex1_1, Ex1_2, Ex1_3, Ex1_4, Menu1 } from "./exercises/Ex1";
 import { Ex2_1, Ex2_2, Ex2_3, Ex2_4, Menu2 } from "./exercises/Ex2";
 import { Ex3_1, Ex3_2, Ex3_3, Ex3_4, Menu3 } from "./exercises/Ex3";
+import Menu4 from "./exercises/Ex4";
 
 const App = () => {
   return (
@@ -31,6 +32,11 @@ const App = () => {
           <Route path="/exercise32" element={<Ex3_2 />} />
           <Route path="/exercise33" element={<Ex3_3 />} />
           <Route path="/exercise34" element={<Ex3_4 />} />
+
+          <Route path="/exercise4" element={<Menu4 />} />
+          <Route path="/exercise42" element={<Ex2_1 adm={true} />} />
+          <Route path="/exercise43" element={<Ex2_2 pais="Brazil" />} />
+          <Route path="/exercise44" element={<Ex3_1 Nome="Armênio" Email="armenio@prof.com" Fone={21999999999} />} />
         </Routes>
       </div>
     </Router>

@@ -38,7 +38,7 @@ export default function Ex3_4() {
                     <input type="tel" id="fone" name="fone" {...register("tel", {
                         required: "O campo telefone é obrigatório!",
                         validate: {
-                            matchPattern: (v) => /^[0-9]*$/.test(v) || "O campo telefone deve conter apenas números!",
+                            matchPattern: (v) => /^[0-9]+$/g.test(v) || "O campo telefone deve conter apenas números!",
                         }
                     })} />
                     <br /> <br />

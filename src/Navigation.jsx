@@ -8,7 +8,7 @@ const Navigation = () => {
         <li>
           <Link to="/">Home</Link>
         </li>
-        {Array.from({ length: 3 }, (_, index) => (
+        {Array.from({ length: 4 }, (_, index) => (
           <li key={index}>
             <Link to={`/exercise${index + 1}`}>Bateria de Exercícios {index + 1}</Link>
           </li>

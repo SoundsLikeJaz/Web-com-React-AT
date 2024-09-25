@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-export default function Ex3_1() {
+export default function Ex3_1({ Nome = "", Email = "", Fone = "" }) {
 
-    const [nome, setNome] = useState("");
-    const [email, setEmail] = useState("");
-    const [fone, setFone] = useState("");
+    const [nome, setNome] = useState(Nome);
+    const [email, setEmail] = useState(Email);
+    const [fone, setFone] = useState(Fone);
 
     function handleSubmit(event) {
         event.preventDefault();
